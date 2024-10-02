@@ -8,4 +8,30 @@ body{
     padding: 0;
 }
 
+section{
+    width: 100px;
+    height:200px;
+    padding: 24px 32px 36px;
+    background-color: black;
+    text-align: center;
+}
+.clase1{
+
+}
+
+.visitado{
+    color: rgb(35, 214, 214);
+    padding: auto;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.visitado:visited{
+    color: rgb(141, 90, 184);
+    padding: auto;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
 
