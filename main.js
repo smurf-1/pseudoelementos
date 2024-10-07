@@ -18,3 +18,20 @@ document.addEventListener(
     }
   }
   
+  document.querySelector("button").onclick = function () {
+    window.print();
+  };
+
+  $('.fs-button').on('click', function(){ 
+ 
+  }
+
+  $('.fs-button').on('click', function(){
+    var elem = document.getElementById('fullscreen');
+    if(document.webkitFullscreenElement) {
+      document.webkitCancelFullScreen();
+    }
+    else {
+      elem.webkitRequestFullScreen();
+    };
+  });

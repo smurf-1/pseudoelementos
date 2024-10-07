@@ -35,10 +35,8 @@ section{
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings:"wdth" 100;
 }
-
 
 .visitado{
     color: rgb(35, 214, 214);
@@ -107,4 +105,110 @@ input:disabled {
     background: #ccc;
   }
  
+  div:dir(rtl) {
+    background-color: #4d24ad;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
+/* Estilos para elementos con dirección de izquierda a derecha */
+div:dir(ltr) {
+    background: #40e0e0;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para detección automática de la dirección */
+div:dir(auto) {
+    background-color: #c02525;
+    text-align: center;
+    padding: 10px;
+}
+
+.box {
+    padding-left: 10px;
+    justify-content: center;
+    background: pink;
+    height: 80px;
+    width: 80px;
+    text-align:justify;
+  }
+  
+  .box:empty {
+    background: rgb(156, 81, 255);
+  }
+
+  input:enabled {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  input:disabled {
+    background-color: lightgray;
+  }
+
+  @page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+  }
+  
+  .parrafo {
+    page-break-after: always;
+  }
+
+  ul li {
+    color: blue;
+  }
+  
+  ul li:first-child {
+    color: red;
+    font-weight: bold;
+  }
+
+  .primero:first-of-type {
+    color: red;
+    font-style: italic;
+  }
+
+  .red-input:focus {
+    background: yellow;
+    color: red;
+  }
+  
+  .blue-input:focus {
+    background: yellow;
+    color: blue;
+  }
+
+  .demo-wrapper {
+    width: 38%;
+    margin: 0 auto;
+  }
+  .html5-fullscreen-api {
+    position: relative;
+  }
+  .html5-fullscreen-api img {
+    max-width: 100%;
+    border: 10px solid #fff;
+    box-shadow: 0px 0px 50px #ccc;
+  }
+  .html5-fullscreen-api .fs-button {
+    z-index: 100;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .hoverr {
+    background-color: powderblue;
+    transition: background-color 0.5s;
+  }
+  
+  .hoverr:hover {
+    background-color: gold;
+  }

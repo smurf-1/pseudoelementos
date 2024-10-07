@@ -18,7 +18,7 @@
   <header>
     <br/>
     <h1 class="anton-regular text-center">Psueudo-classes</h1>
-    <p class="texto open-sans">Una pseudoclase en CSS es una palabra clave que se añade a un selector y especifica un estado especial del elemento seleccionado. Las pseudoclases permiten aplicar estilos a un elemento cuando está en un estado específico o basado en la posición de los elementos en el DOM.</p>
+    <p class="open-sans texto ">Una pseudoclase en CSS es una palabra clave que se añade a un selector y especifica un estado especial del elemento seleccionado. Las pseudoclases permiten aplicar estilos a un elemento cuando está en un estado específico o basado en la posición de los elementos en el DOM.</p>
   </header>
   <div class="container-fluids">
     <main class="row">
@@ -49,13 +49,13 @@
       <section class="col-3">
         <h1>:Dir()</h1>
         <div dir="rtl">
-          <span>test1</span>
-          <div dir="ltr">
-            test2
-            <div dir="auto">עִבְרִית</div>
-          </div>
+            <span>Este texto se muestra de derecha a izquierda (RTL)</span>
+            <div dir="ltr">
+                Este texto se muestra de izquierda a derecha (LTR)
+                <div dir="auto">עִבְרִית (Este texto en hebreo se detecta automáticamente)</div>
+            </div>
         </div>
-       </section>
+    </section>
       <section class="col-3">
         <h1>:Desable</h1>
         <form action="#">
@@ -76,35 +76,69 @@
       </section>
       <section class="col-3">
         <h1>:Empty</h1>
-        <a href="index.html"> bbb</a>
+        <aside class="row center">
+        <div class="box "><!-- Voy a ser de color lima. --></div>
+        <div class="box ">Voy a ser de color rosa.</div>
+        <div class="box "></div>
+        </aside>
       </section>
       <section class="col-3">
         <h1>:Enabled</h1>
-        <a href="index.html"> bbb</a>
+        <form>
+          <label for="name">Name: </label><br>
+          <input id="name" name="name" type="text" /><br>
+          
+          <label for="email">Email: </label><br>
+          <input id="email" name="email" type="email" /><br>
+          
+          <label for="country">Country: </label><br>
+          <input id="country" name="country" type="text" disabled />
+          </form>
       </section>
       <section class="col-3">
         <h1>:First</h1>
-        <a href="index.html"> bbb</a>
+        <p class="parrafo">Primera página.</p>
+        <p class="parrafo">Segunda página.</p>
+        <button>Imprimir!</button>
       </section>
       <section class="col-3">
         <h1>:First-child</h1>
-        <a href="index.html"> bbb</a>
+        <ul>
+          <li>Objeto 1</li>
+          <li>Objeto 2</li>
+          <li>
+            Objeto 3
+            <ul>
+              <li>Objeto 3.1</li>
+              <li>Objeto 3.2</li>
+              <li>Objeto 3.3</li>
+            </ul>
+          </li>
+        </ul>
       </section>
       <section class="col-3">
         <h1>:First-of-type</h1>
-        <a href="index.html"> bbb</a>
+        <h2>Encabezado</h2>
+        <p class="primero">Párrafo 1</p>
+        <p class="primero">Párrafo 2</p>
       </section>
       <section class="col-3">
         <h1>:Fullscreen</h1>
-        <a href="index.html"> bbb</a>
+        <div id="fullscreen" class="html5-fullscreen-api">
+          <img src="imagenes/expandir.png">
+          <span class="fs-button"></span>
+        </div>
       </section>
       <section class="col-3">
         <h1>:Focus</h1>
-        <a href="index.html"> bbb</a>
+        <input class="red-input" value="Voy a ser de color rojo cuando enfoque." />
+        <br/>
+        <br/>
+        <input class="blue-input" value="Voy a ser de color azul cuando enfoque." />
       </section>
       <section class="col-3">
         <h1>:Hover</h1>
-        <a href="index.html"> bbb</a>
+        <a href="#" class="hoverr">Intenta pasar el mouse sobre este enlace.</a>
       </section>
       <section class="col-3">
         <h1>:Indeterminate</h1>
@@ -151,55 +185,51 @@
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">
-        <h1>name</h1>
+        <h1>:Nth-of-type</h1>
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">
-        <h1>name</h1>
+        <h1>:Only-child</h1>
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">
-        <h1>name</h1>
+        <h1>:Only-of-type</h1>
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">
-        <h1>name</h1>
+        <h1>:Optional</h1>
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">
-        <h1>name</h1>
+        <h1>:Out-of-range</h1>
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">
-        <h1>name</h1>
+        <h1>:read-only</h1>
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">
-        <h1>name</h1>
+        <h1>:read-write</h1>
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">
-        <h1>name</h1>
+        <h1>:Required</h1>
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">
-        <h1>name</h1>
+        <h1>:Right</h1>
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">
-        <h1>name</h1>
+        <h1>:Root</h1>
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">
-        <h1>name</h1>
+        <h1>:scope</h1>
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">
-        <h1>name</h1>
-        <a href="index.html"> bbb</a>
-      </section>
-      <section class="col-3">
-        <h1>name</h1>
+        <h1>:Target</h1>
         <a href="index.html"> bbb</a>
       </section>
       <section class="col-3">

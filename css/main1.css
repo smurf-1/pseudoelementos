@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    font-size: x-large;
+    background-color: white;
+}
+
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    font-size: 60px;
+}
+
+section {
+    width: 100px;
+    height: 350px;
+    padding: 24px 32px 36px;
+    background-color: rgb(189, 186, 186);
+    text-align: center;
+}
+
+.texto {
+    margin: 24px 32px 36px;
+}
+
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Se corrigió el <weight> */
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.visitado {
+    color: rgb(35, 214, 214);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.visitado:visited {
+    color: rgb(141, 90, 184);
+}
+
+.clase1 {
+    color: rgb(35, 214, 214);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.clase1:active {
+    color: rgb(238, 241, 241);
+    background-color: rgb(204, 207, 18);
+}
+
+.clase2 {
+    color: rgb(2, 2, 2);
+    font-size: 30px;
+    justify-content: center;
+}
+
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px hotpink;
+    color: rgb(64, 68, 68);
+}
+
+input:default + label {
+    color: aqua;
+}
+
+/* Elementos deshabilitados */
+input:disabled {
+    background: #ccc;
+}
+
+/* Estilos para elementos con dirección de texto derecha a izquierda */
+div:dir(rtl) {
+    background-color: #4d24ad;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para elementos con dirección de texto izquierda a derecha */
+div:dir(ltr) {
+    background: #40e0e0;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para detección automática de la dirección del texto */
+div:dir(auto) {
+    background-color: #c02525;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para la caja sin interacción con dir() */
+.box {
+    background: pink;
+    height: 80px;
+    width: 80px;
+}
+
+.box:empty {
+    background: lime;
+}
