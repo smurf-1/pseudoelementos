@@ -3,23 +3,42 @@
 }
 
 body{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 0;
     padding: 0;
 }
 .h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    background-color: white;
 }
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    font-size: 60px;
+  }
+  
 section{
     width: 100px;
     height:350px;
     padding: 24px 32px 36px;
-    background-color: black;
+    background-color: rgb(189, 186, 186);
     text-align: center;
 }
-.clase1{
+ .texto{
+    margin:24px 32px 36px; ;
+ }
 
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
+
 
 .visitado{
     color: rgb(35, 214, 214);
@@ -57,7 +76,7 @@ section{
 }
 
 .clase2{
-    color:  rgb(80, 85, 85);
+    color:  rgb(2, 2, 2);
     padding: auto;
     font-size: 30px;
     justify-content: center;
@@ -72,16 +91,16 @@ input[type="checkbox"]:checked {
   }
     
   input:default + label {
-    color: rgb(21, 167, 204);
+    color: aqua;
   }
 
   :dir(ltr) {
-    background-color: rgb(61, 61, 57);
+    background-color: rgb(180, 180, 180);
     
   }
   
   :dir(rtl) {
-    background-color: powderblue;
+    background-color: aqua;
   }
   /* Selecciona cualquier <input> deshabilitado */
 input:disabled {

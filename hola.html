@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases en CSS</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            margin-top: 30px;
+            color: #555;
+        }
+        pre {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 5px solid #333;
+            overflow-x: auto;
+        }
+        .example-box {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #f0f0f0;
+        }
+
+        /* Ejemplo de pseudoclases */
+        a:hover {
+            color: red;
+        }
+        p:first-child {
+            font-weight: bold;
+        }
+        li:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pseudoclases en CSS</h1>
+</header>
+
+<div class="container">
+    <section>
+        <h2>¿Qué es una pseudoclase?</h2>
+        <p>Una pseudoclase en CSS es una palabra clave que se añade a un selector y especifica un estado especial del elemento seleccionado. Las pseudoclases permiten aplicar estilos a un elemento cuando está en un estado específico o basado en la posición de los elementos en el DOM.</p>
+    </section>
+
+    <section>
+        <h2>Ejemplo de pseudoclases comunes</h2>
+
+        <h3>:hover</h3>
+        <p>La pseudoclase <code>:hover</code> se aplica cuando un usuario pasa el ratón sobre un elemento. Es comúnmente usada para cambiar el estilo de enlaces y botones.</p>
+        <pre><code>a:hover {
+    color: red;
+}</code></pre>
+        <div class="example-box">
+            <p>Prueba pasar el mouse sobre este <a href="#">enlace de ejemplo</a>.</p>
+        </div>
+
+        <h3>:first-child</h3>
+        <p>La pseudoclase <code>:first-child</code> selecciona el primer hijo de un elemento padre.</p>
+        <pre><code>p:first-child {
+    font-weight: bold;
+}</code></pre>
+        <div class="example-box">
+            <p>Este es el primer párrafo y debería estar en negrita.</p>
+            <p>Este es otro párrafo normal.</p>
+        </div>
+
+        <h3>:nth-child()</h3>
+        <p>La pseudoclase <code>:nth-child()</code> selecciona uno o más elementos en función de su posición entre sus hermanos. En este caso, seleccionamos los elementos impares.</p>
+        <pre><code>li:nth-child(odd) {
+    background-color: #f9f9f9;
+}</code></pre>
+        <div class="example-box">
+            <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+                <li>Elemento 4</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Más pseudoclases útiles</h2>
+        <ul>
+            <li><code>:focus</code> - Se aplica cuando un elemento recibe el foco, como al hacer clic en un campo de entrada.</li>
+            <li><code>:last-child</code> - Selecciona el último hijo de un elemento padre.</li>
+            <li><code>:not()</code> - Selecciona los elementos que no coinciden con un selector específico.</li>
+        </ul>
+    </section>
+</div>
+
+</body>
+</html>
