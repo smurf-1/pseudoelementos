@@ -118,7 +118,6 @@
       </section>
       <section class="col-3">
         <h1>:First-of-type</h1>
-        <h2>Encabezado</h2>
         <p class="primero">Párrafo 1</p>
         <p class="primero">Párrafo 2</p>
       </section>
@@ -214,23 +213,56 @@
       </section>
       <section class="col-3">
         <h1>:Required</h1>
-        <a href="index.html"> bbb</a>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required>
+  
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" required>
+  
+          <button type="submit">Enviar</button>
+      </form>
       </section>
       <section class="col-3">
         <h1>:Right</h1>
-        <a href="index.html"> bbb</a>
+        <div class="container">
+          <h1>Título Principal</h1>
+          <p>Este texto está alineado a la derecha.</p>
+      </div>
       </section>
-      <section class="col-3">
+      <section class="mi-seccion">
         <h1>:Root</h1>
-        <a href="index.html"> bbb</a>
-      </section>
+        <p>Esta es una sección de ejemplo utilizando variables CSS.</p>
+    </section>
       <section class="col-3">
         <h1>:scope</h1>
-        <a href="index.html"> bbb</a>
+        <div class="grandparent">
+          <div class="element">Element GrandParent</div>
+          <div class="parent">
+            <div class="element">Element Parent</div>
+            <div class="child">
+              <div class="element">Element Child</div>
+            </div>
+          </div>
+        </div>
+        <div class="element">Element outside</div>
       </section>
       <section class="col-3">
         <h1>:Target</h1>
-        <a href="index.html"> bbb</a>
+        <h3>Tabla de contenido</h3>
+          <ol>
+            <li><a href="#p1">¡Salta al primer párrafo!</a></li>
+            <li><a href="#p2">¡Salta al segundo párrafo!</a></li>
+          </ol>
+          <h3>contenido</h3>
+          <p id="p1" class="targeta">
+            Puede orientar elegir como blanco <i>este párrafo</i> utilizando un fragmento
+            de URL. ¡Haz clic en el enlace de arriba para probar!
+          </p>
+          <p id="p2" class="targeta">
+            Este es <i>otro párrafo</i>, también accesible desde los enlaces de arriba.
+            ¿No es encantador?
+          </p>
       </section>
       <section class="col-3">
         <h1>:valid</h1>

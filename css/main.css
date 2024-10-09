@@ -114,7 +114,6 @@ input:disabled {
 
 /* Estilos para elementos con dirección de izquierda a derecha */
 div:dir(ltr) {
-    background: #40e0e0;
     text-align: left;
     padding: 10px;
     margin-bottom: 10px;
@@ -212,3 +211,59 @@ div:dir(auto) {
   .hoverr:hover {
     background-color: gold;
   }
+
+  .targeta:target {
+    background-color: gold;
+  }
+  
+  /* Agrega un pseudo-elemento dentro del elemento de destino */
+  .targeta:target::before {
+    font: 70% sans-serif;
+    content: "►";
+    color: limegreen;
+    margin-right: 0.25em;
+  }
+  
+  /* Estilo de elementos en cursiva dentro del elemento de destino */
+  .targeta:target i {
+    color: rgb(102, 67, 197);
+  }
+
+  @scope (.grandparent) to (.child) {
+    .element {
+      background: orangered;
+      color: white;
+      padding: 5px;
+    }
+  }
+
+  :root {
+    --color-fondo: #297ac2;
+    --color-texto: #a01b1b;
+    --fuente-principal: 'Arial', sans-serif;
+    --padding-seccion: 20px;
+}
+
+
+.mi-seccion {
+   font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    padding: var(--padding-seccion);
+    border: 1px solid #9852d1;
+    border-radius: 5px;
+}
+
+.container {
+  text-align: right; /* Alinea el texto a la derecha */
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+input:required {
+  border: 2px solid #f00; /* Borde rojo para campos requeridos */
+}
+
+input:required:focus {
+  border-color: #0f0; /* Cambia el borde a verde cuando está enfocado */
+}
